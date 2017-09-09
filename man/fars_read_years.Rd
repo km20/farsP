@@ -12,7 +12,7 @@ will be read.}
 }
 \value{
 A list of tbl data frames with columns "MONTH" and "year" corresponding
-to the specified years. In case of wrong year specification an error will be 
+to the specified years. In case of wrong year specification an error will be
 thrown.
 }
 \description{
@@ -21,7 +21,9 @@ it reads the data, adds a "year" column and selects the two columns "MONTH" and
 "year".
 }
 \examples{
+\dontrun{
 fars_read_years(2013)
 fars_read_years(2013:2014)
+}
 
 }

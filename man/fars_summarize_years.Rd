@@ -11,7 +11,7 @@ fars_summarize_years(years)
 will be read.}
 }
 \value{
-A tbl data frame containing the number of accidents summarized by year 
+A tbl data frame containing the number of accidents summarized by year
 and by month.Bad year argument or missing files will produce an error.
 }
 \description{
@@ -19,7 +19,9 @@ This function reads years and months from data for a given set of years.
 The number of accidents by year and by month.
 }
 \examples{
+\dontrun{
 fars_summarize_years("2013")
 fars_summarize_years(2013:2015)
+}
 
 }

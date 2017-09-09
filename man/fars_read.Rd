@@ -2,42 +2,26 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read}
 \alias{fars_read}
-\title{Read data from a file into a tbl dataframe
- 
- This function reads data from a specified file. This operation is based on the
- read_csv function from the readr package. It is useful for reading the most 
- common types of flat file data, comma separated values and tab separated values.
- 
- @param file A character string which specifies path to a file.
- Files ending in .gz, .bz2, .xz, or .zip will be automatically uncompressed.
- 
- @return This function return a tbl data frame (using the dplyr package).
- An error will be thrown if the specified file dosen't exist.
- 
- @examples 
- fars_read(data/accident_2013.csv.bz2")
- 
- @importFrom readr read_csv
- @importFrom dplyr tbl_df}
+\title{Read data from a file into a tbl dataframe}
 \usage{
 fars_read(filename)
 }
+\arguments{
+\item{filename}{A character string which specifies path to a file.
+Files ending in .gz, .bz2, .xz, or .zip will be automatically uncompressed.}
+}
+\value{
+This function return a tbl data frame (using the dplyr package).
+An error will be thrown if the specified file dosen't exist.
+}
 \description{
-Read data from a file into a tbl dataframe
- 
- This function reads data from a specified file. This operation is based on the
- read_csv function from the readr package. It is useful for reading the most 
- common types of flat file data, comma separated values and tab separated values.
- 
- @param file A character string which specifies path to a file.
- Files ending in .gz, .bz2, .xz, or .zip will be automatically uncompressed.
- 
- @return This function return a tbl data frame (using the dplyr package).
- An error will be thrown if the specified file dosen't exist.
- 
- @examples 
- fars_read(data/accident_2013.csv.bz2")
- 
- @importFrom readr read_csv
- @importFrom dplyr tbl_df
+This function reads data from a specified file. This operation is based on the
+read_csv function from the readr package. It is useful for reading the most
+common types of flat file data, comma separated values and tab separated values.
+}
+\examples{
+\dontrun{
+fars_read("data/accident_2013.csv.bz2")
+}
+
 }

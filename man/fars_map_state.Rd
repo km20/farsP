@@ -9,9 +9,9 @@ fars_map_state(state.num, year)
 \arguments{
 \item{state.num}{A numeric value used to specify a state number.}
 
-\item{year}{A numeric value to specify the year for which the graphic 
+\item{year}{A numeric value to specify the year for which the graphic
 is plotted. An error will be thrown if there are no records for the given
-state and the specified year. Wrong year or state number specification will 
+state and the specified year. Wrong year or state number specification will
 produce an error.}
 }
 \value{
@@ -21,6 +21,8 @@ A map plot of accidents location is returned.
 Plots accidents locations on a map for a given year and a given state.
 }
 \examples{
-fars_map_state(1,2013)
+\dontrun{
+ fars_map_state(1,2013)
+ }
 
 }

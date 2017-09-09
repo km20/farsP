@@ -7,7 +7,7 @@
 make_filename(year)
 }
 \arguments{
-\item{year}{A numeric or a character vector that specifies the years 
+\item{year}{A numeric or a character vector that specifies the years
 for which we want to build the file names.}
 }
 \value{
