@@ -1,0 +1,16 @@
+Package: farsP
+Version: 1.0
+Date: 2017-09-07
+Depends: R (>= 3.0.0)
+Imports: readr, dplyr, tidyr, maps, graphics
+Title: Data Summary from US National Highway Traffic Safety Administration's FARS
+Author: K. Masmoudi <khalil@via.ecp.fr>
+Maintainer: K. Masmoudi <khalil@via.ecp.fr>
+Description: This package provides several useful functions to read, summarize and plot
+      maps using the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System data.
+License: GPL-3
+URL: https://github.com/km20/farsP
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1

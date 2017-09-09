@@ -1,0 +1,39 @@
+---
+title: "Details about the package"
+author: "K. Masmoudi <khalil@via.ecp.fr>"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Details about the package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# farsP quickstart guide
+
+The goal of this document is to get you up and running with farsP as quickly as possible.
+farsP is designed to read and summarize data from the "[US National Highway Traffic Safety Administration's Fatality Analysis Reporting System](https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS))".
+
+Thi package functions may be tested "[this data](https://d3c33hcgiwev3.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1505088000&Signature=MAhUuYxuAn89A7vbFOIuF~OQhfAodK60g4L23AHI2eFzw29oBgTsPc4prtS6XNivQDwrmNBtUo79ZGPrbvLuaPNhow0bAw8ArRC822Q-9CadF1hfO-zLYZlfm3qdJ0pfSDDqjvWgy5rx4v8hHdjvsMQXXMVp4mGqNcpHkxX7AYc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)".
+
+The are two important functions in this package. The first function can be used to summarize the accidents' data by year and by month. The second produces a map graphic containing the accidents' locations.
+
+## Summarizing accidents data : 
+
+To summarize the data about accidents for a given set of years, one can use the function `fars_summarize_years`.  This function reads years and months from data for a given set of years and returns a tbl data frame containing the number of accidents summarized by year.
+```{r eval=FALSE}
+# Get summary for the year 2013
+fars_summarize_years(2013)
+
+# Get summary for multiple years (2013, 2014 and 2015)
+fars_summarize_years(2013:2015)
+```
+
+## Producing map of accidents
+
+A maps graphic containing the accidents' locations for a given year and given state can be produced using the function `fars_map_state`. This function function take as parameters the state specified as a numeric value and a set of year which is a numeric value to specify the year for which the graphic is plotted. A map plot of accidents location is returned.
+
+```{r eval=FALSE}
+# Plot the accidents map for the state number 1 during the year 2013
+fars_map_state(1,2013)
+```
