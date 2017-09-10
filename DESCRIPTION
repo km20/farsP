@@ -2,7 +2,7 @@ Package: farsP
 Version: 1.0
 Date: 2017-09-07
 Depends: R (>= 3.0.0)
-Imports: readr, dplyr, tidyr, maps, graphics
+Imports: readr, dplyr, tidyr, maps, graphics,magrittr
 Title: Data Summary from US National Highway Traffic Safety Administration's FARS
 Author: K. Masmoudi <khalil@via.ecp.fr>
 Maintainer: K. Masmoudi <khalil@via.ecp.fr>

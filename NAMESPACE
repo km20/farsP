@@ -9,4 +9,5 @@ importFrom("dplyr", "tbl_df","mutate","select", "group_by",
 importFrom("tidyr", "spread")
 importFrom("maps", "map")
 importFrom("graphics", "points")
+importFrom("magrittr", "%>%")
 
