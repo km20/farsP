@@ -1,5 +1,7 @@
 # farsP
 
+https://travis-ci.org/km20/farsP.svg?branch=master
+
 The aim of farsP is to provide several useful functions to read, summarize and plot maps using the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System data.
 
 Key features:
